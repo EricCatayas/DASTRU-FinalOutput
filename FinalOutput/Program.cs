@@ -8,9 +8,6 @@ namespace FinalOutput
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-
             const int WINDOW_HEIGHT = 40;
             const int WINDOW_WIDTH = 98;
             static void Main(string[] args)
@@ -31,8 +28,8 @@ namespace FinalOutput
 
             }
 
-        }
-    }
+        
+     }
 
 
 }

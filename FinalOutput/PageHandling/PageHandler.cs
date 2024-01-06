@@ -13,7 +13,7 @@ namespace FinalOutput
         {
             if (products.Count % 10 == 0)
             {
-               return products.Count / 10;
+                return products.Count / 10;
             }
             else
             {
@@ -23,25 +23,13 @@ namespace FinalOutput
 
         }
 
+        public static bool CheckIfPageIsFullOrEmpty(Stack<int> currentPage, List<Product> mainProducts)
+        {
 
-        //public static int GetPage()
-        //{
-        //    string pagePath = GetFilePath.TextFilePath(@"PageHandler", "pages");
+            return (mainProducts.Count % 10 == 0 && mainProducts.Count != 0) ? true : false;
 
-        //    StreamReader sr = new StreamReader(pagePath);
-        //    int page = int.Parse(sr.ReadToEnd());
-        //    sr.Close();
-        //    sr.Dispose();
-        //    return page;
+        }
 
-        //}
-
-        //public static void UpdatePage(int page)
-        //{
-        //    string pagePath = GetFilePath.TextFilePath(@"PageHandler", "pages");
-
-        //    FileManager.WriteTextFile(pagePath, page.ToString());
-        //}
 
         public static void NextPage(Stack<int> pageStack, List<Product> products)
         {
